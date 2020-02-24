@@ -4,7 +4,8 @@ events.on("push", () => {
   job.tasks = [
     "echo Hello",
     "echo World",
-    "kubectl get pods"
+    "kubectl get pods --all-namespaces",
+    "kubectl cluster-info"
   ];
   job.run();
 });
