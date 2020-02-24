@@ -4,7 +4,7 @@ events.on("push", () => {
   job.tasks = [
     "echo Hello",
     "echo World",
-    "get pods"
+    "kubectl get pods"
   ];
   job.run();
 });
